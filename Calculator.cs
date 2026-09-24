@@ -42,5 +42,15 @@ namespace CalculatorApp
             }
             return result;
         }
+                public int Power(int number, int exponent)
+        {
+            // Намеренно не самый лучший код
+            int result = 1;
+            for (int i = 0; i < exponent; i++)
+            {
+                result = result * number;
+            }
+            return result;
+        }
     }
 }
